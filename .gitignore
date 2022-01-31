@@ -1,9 +1,7 @@
 #IGNORE IMAGES IN THIS REPOSITORY
 
 ### Images ###
-
-*.jpg
-*.jpeg
-*.png
-
+mapa2/img/*.jpg
+mapa2/img/*.jpeg
+mapa2/img/*.png
 #Mitzy Diaz
