@@ -2,8 +2,8 @@
 
 ### Images ###
 
-img/*.jpg
-img/*.jpeg
-img/*.png
+*.jpg
+*.jpeg
+*.png
 
 #Mitzy Diaz
