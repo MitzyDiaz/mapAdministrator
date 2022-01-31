@@ -1,0 +1,2 @@
+# mapAdministrator
+Interactive map manager
