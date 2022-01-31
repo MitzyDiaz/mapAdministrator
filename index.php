@@ -9,7 +9,6 @@
 </head>
 <body>
 
-
 <div class="container" id="cont-primary">
   <div class="shadow-lg p-3 mb-5 bg-body rounded">
     <h2 id="title-form">Insertar Imagen</h2>
