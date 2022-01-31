@@ -45,11 +45,22 @@
 		C384.8,550.8,382.1,552.8,379.4,553.2z"/>
 </g>
 <g id="Tequisquiapan">
-	<title>Tequisquiapan</title>	
+		<?php
+			require_once('php/conexion.php');
+			$query="SELECT descripcion.descripMunicipio, descripcion.imgMunicipio, municipios.nombreMunicipio 
+			FROM municipios INNER JOIN descripcion ON municipios.idMunicipio = descripcion.idMunicipio WHERE descripcion.idMunicipio = 17";
+			$execute=mysqli_query($conexion, $query) or die(mysqli_error($conexion));
+
+			while($fila=mysqli_fetch_array($execute)){
+        ?>
+		<title><?php echo $fila['nombreMunicipio']?></title>
 		<desc>
-			<image xlink:href="welcome-profile.jpg" alt=""></image>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus maximus felis vulputate turpis varius condimentum. Aenean eleifend est non libero cursus, id bibendum ex pretium. Pellentesque at nibh neque. Vivamus tempus in quam sit amet tristique. Morbi semper lacinia sapien quis pellentesque. Nunc pharetra dolor vitae felis congue, eu faucibus odio ornare. Morbi venenatis urna lacus, id interdum ex vulputate non. Integer in tortor aliquam, tincidunt metus vel, sollicitudin lorem. Suspendisse potenti. Sed iaculis tincidunt sem at hendrerit.</p>
+			<image xlink:href="<?php echo substr($fila['imgMunicipio'],3)?>" alt=""></image>
+			<p><?php echo $fila['descripMunicipio']?></p>
 		</desc>
+		<?php
+            }
+        ?>
 	<path id="path2224" class="st1" d="M319.5,653.1c1.4,5.4-6,15.2-9.1,18.3c0.4-0.4,8.9,6.7,10.3,7.1c5.6,1.7,3.4,1.3,5.9-4.2
 		c7.2-15.5,4.1,3.7,11.4,1.5c-3.1,1,5.4-9.4,5.4-5.1c0-4.7-4.2-9.9-0.2-14.7c5.4-6.5,4.8-0.1,5.4,2.4c0.4,1.8-0.4,6.9-0.2,9.6
 		c0.1,2.3-1.3,4.6-0.2,6.9c1.6,3.5,6.1,2.9,8,5.1c1.3,1.5-0.2,4.1,2,6c2,1.7,3.5-1.1,4.2-0.3c6.2,5.8-2.1,4.3-1,11.3
@@ -62,11 +73,22 @@
 		c3.6,5.2,7.9,9.9,8.9,15.9c1.3,7.7,0,16.7,0,24.5C322,654.5,320.5,653.9,319.5,653.1z"/>
 </g>
 <g id="SanJuandelRio">
-	<title>San Juan del Río</title>	
+		<?php
+			require_once('php/conexion.php');
+			$query="SELECT descripcion.descripMunicipio, descripcion.imgMunicipio, municipios.nombreMunicipio 
+			FROM municipios INNER JOIN descripcion ON municipios.idMunicipio = descripcion.idMunicipio WHERE descripcion.idMunicipio = 16";
+			$execute=mysqli_query($conexion, $query) or die(mysqli_error($conexion));
+
+			while($fila=mysqli_fetch_array($execute)){
+        ?>
+		<title><?php echo $fila['nombreMunicipio']?></title>
 		<desc>
-			<image xlink:href="welcome-profile.jpg" alt=""></image>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus maximus felis vulputate turpis varius condimentum. Aenean eleifend est non libero cursus, id bibendum ex pretium. Pellentesque at nibh neque. Vivamus tempus in quam sit amet tristique. Morbi semper lacinia sapien quis pellentesque. Nunc pharetra dolor vitae felis congue, eu faucibus odio ornare. Morbi venenatis urna lacus, id interdum ex vulputate non. Integer in tortor aliquam, tincidunt metus vel, sollicitudin lorem. Suspendisse potenti. Sed iaculis tincidunt sem at hendrerit.</p>
+			<image xlink:href="<?php echo substr($fila['imgMunicipio'],3)?>" alt=""></image>
+			<p><?php echo $fila['descripMunicipio']?></p>
 		</desc>
+		<?php
+            }
+        ?>
 	<path id="path2252" class="st1" d="M260.7,779.2c6.4-0.9,3,2.9,4.8,5.9c3.7,6,3.5,4.9,9.8,8.4c3.8,2.2,3.4,1.4,3.9,3.6
 		c0.3,1.5-3.6,1.8-2,4.4c1.2,1.9,5.7,0.6,7.2,0c3.7-1.4,3.8-3.4,7.9-3.8c3.7-0.4,8.7,0.6,12.5,0.8c8.6,0.5,4.7,0,7.5,6.8
 		c0.5,1.2,4.3,7.1,4.9,7c-2.2-0.3-4.1,0.3-5.4,1.7c-0.4,1.7,4,3.6,3.5,5.5c-0.7,2.8-4.8,3.6-5.8,7.1c-2.9,9.5,6.3,9.8,11.1,14.1
@@ -118,11 +140,22 @@
 		c-1.1-2.5,3.1-0.8-2.1-4.3c-2-1.4-4.8-0.5-7-2.2c-2.4-1.9-2.4-3.9-3.7-6.4C263.9,782.3,266.3,778.6,260.7,779.2z"/>
 </g>
 <g id="PedroEscobedo">
-	<title>Pedro Escobedo</title>	
+		<?php
+			require_once('php/conexion.php');
+			$query="SELECT descripcion.descripMunicipio, descripcion.imgMunicipio, municipios.nombreMunicipio 
+			FROM municipios INNER JOIN descripcion ON municipios.idMunicipio = descripcion.idMunicipio WHERE descripcion.idMunicipio = 12";
+			$execute=mysqli_query($conexion, $query) or die(mysqli_error($conexion));
+
+			while($fila=mysqli_fetch_array($execute)){
+        ?>
+		<title><?php echo $fila['nombreMunicipio']?></title>
 		<desc>
-			<image xlink:href="welcome-profile.jpg" alt=""></image>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus maximus felis vulputate turpis varius condimentum. Aenean eleifend est non libero cursus, id bibendum ex pretium. Pellentesque at nibh neque. Vivamus tempus in quam sit amet tristique. Morbi semper lacinia sapien quis pellentesque. Nunc pharetra dolor vitae felis congue, eu faucibus odio ornare. Morbi venenatis urna lacus, id interdum ex vulputate non. Integer in tortor aliquam, tincidunt metus vel, sollicitudin lorem. Suspendisse potenti. Sed iaculis tincidunt sem at hendrerit.</p>
+			<image xlink:href="<?php echo substr($fila['imgMunicipio'],3)?>" alt=""></image>
+			<p><?php echo $fila['descripMunicipio']?></p>
 		</desc>
+		<?php
+            }
+        ?>
 	<path id="path2247" class="st1" d="M233.8,677.8c0,7.9,9,6.3,0.6,14c-1.2,1.1-3.7-0.4-5,0.9c-0.6,0.6-1.3,7.6-1.5,8.3
 		c-0.5,1.5,0.3,3.1-0.6,4.7c-0.8,1.4-4.3,1-4.6,3c-0.4,2.5,4.8,5.9,3.7,8.4c-1.5,3.5-4.3-1.5-6.2-0.7c-3.5,1.5-2,4.5-4.2,6
 		c-4.8,3.2-12.5-1.8-17.5-0.6c-2.7,0.6,6.2,9.6,6.6,10.4c3,6.4-1.8,14.3,2.6,20.7c4.8,7,3.4,1.3,9.3,1.3c3.9,0,2.5,0,6.2,1.3
@@ -189,11 +222,22 @@
 		c0.1,4.4-1.5,9.5-1.3,13.6c0.3,5.5,0.6,4.2,3.6,9.2c4.4,7.6,3.4,13.4,12,16C118.7,762.6,127.6,760.5,135,766.1z"/>
 </g>
 <g id="ElMarques">
-	<title>El Marqués</title>	
+		<?php
+			require_once('php/conexion.php');
+			$query="SELECT descripcion.descripMunicipio, descripcion.imgMunicipio, municipios.nombreMunicipio 
+			FROM municipios INNER JOIN descripcion ON municipios.idMunicipio = descripcion.idMunicipio WHERE descripcion.idMunicipio = 11";
+			$execute=mysqli_query($conexion, $query) or die(mysqli_error($conexion));
+
+			while($fila=mysqli_fetch_array($execute)){
+        ?>
+		<title><?php echo $fila['nombreMunicipio']?></title>
 		<desc>
-			<image xlink:href="welcome-profile.jpg" alt=""></image>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus maximus felis vulputate turpis varius condimentum. Aenean eleifend est non libero cursus, id bibendum ex pretium. Pellentesque at nibh neque. Vivamus tempus in quam sit amet tristique. Morbi semper lacinia sapien quis pellentesque. Nunc pharetra dolor vitae felis congue, eu faucibus odio ornare. Morbi venenatis urna lacus, id interdum ex vulputate non. Integer in tortor aliquam, tincidunt metus vel, sollicitudin lorem. Suspendisse potenti. Sed iaculis tincidunt sem at hendrerit.</p>
+			<image xlink:href="<?php echo substr($fila['imgMunicipio'],3)?>" alt=""></image>
+			<p><?php echo $fila['descripMunicipio']?></p>
 		</desc>
+		<?php
+            }
+        ?>
 	<path id="path2209" class="st1" d="M178.9,469.1c0.1,2.7,0.1,6-0.6,8.6c-1.8,6.7-1.8,3.2-7.3,8.3c-1.9,1.8-2.8-0.3-3.4,2
 		c-0.3,1.3,2.5,3,2.4,4.5c-0.5,8-4.8,1.6-9.3,5.7c-1.4,1.2,0.6,4.7-0.7,6.4c-1.5,1.8-4.3,1.6-5.7,3.2c-1,1.1-1.8,4.1-2.7,5
 		c-2,1.8-6.1,1.9-7.7,3.5c-2.3,2.5-2.9,9.2-1.7,12.3c0.8,2,4,3.4,4.8,5.6c0.2,0.6-4.8,2-3.8,2.3c7.2,2.4,6.2,2.2,6.7,9.2
@@ -213,11 +257,22 @@
 </g>
 
 <g id="Queretaro">
-	<title>Querétaro</title>	
+		<?php
+			require_once('php/conexion.php');
+			$query="SELECT descripcion.descripMunicipio, descripcion.imgMunicipio, municipios.nombreMunicipio 
+			FROM municipios INNER JOIN descripcion ON municipios.idMunicipio = descripcion.idMunicipio WHERE descripcion.idMunicipio = 14";
+			$execute=mysqli_query($conexion, $query) or die(mysqli_error($conexion));
+
+			while($fila=mysqli_fetch_array($execute)){
+        ?>
+		<title><?php echo $fila['nombreMunicipio']?></title>
 		<desc>
-			<image xlink:href="welcome-profile.jpg" alt=""></image>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus maximus felis vulputate turpis varius condimentum. Aenean eleifend est non libero cursus, id bibendum ex pretium. Pellentesque at nibh neque. Vivamus tempus in quam sit amet tristique. Morbi semper lacinia sapien quis pellentesque. Nunc pharetra dolor vitae felis congue, eu faucibus odio ornare. Morbi venenatis urna lacus, id interdum ex vulputate non. Integer in tortor aliquam, tincidunt metus vel, sollicitudin lorem. Suspendisse potenti. Sed iaculis tincidunt sem at hendrerit.</p>
+			<image xlink:href="<?php echo substr($fila['imgMunicipio'],3)?>" alt=""></image>
+			<p><?php echo $fila['descripMunicipio']?></p>
 		</desc>
+		<?php
+            }
+        ?>
 	<path id="path2229" class="st1" d="M95,641.8c5,2,11.3,1.2,16.7,1.5c3.5,0.1,7.8-0.4,11.2,0.5c-1.1-0.3,8.6,1.8,5.5,2.6
 		c-3,0.7-4.3,1.4-4.2,4.2c1.7,0.9,3.3,2,4.7,3.4c0.4,1.1,0.1,1.9-1,2.4c0.2,1.4-6.5,7.2-1,9.1c4,1.3,4.4-2.9,6.5-4.9
 		c-1,1,4.9,7.6,6.6,8.3c2.2,1,6.4-1,8.1,0.4c2.4,2.1,3.2,10.8,4.1,14c3.2-1.2,7.8-2,10.6-4c5.2-3.6,1.4-0.7,3.4-6.7
@@ -368,11 +423,22 @@
 		c-0.8,3.3-3.3,11.4-3.2,14.6C344,372.4,354.9,376.9,355.9,384.2z"/>
 </g>
 <g id="SanJoaquin">
-	<title>San Joaquín</title>	
+		<?php
+			require_once('php/conexion.php');
+			$query="SELECT descripcion.descripMunicipio, descripcion.imgMunicipio, municipios.nombreMunicipio 
+			FROM municipios INNER JOIN descripcion ON municipios.idMunicipio = descripcion.idMunicipio WHERE descripcion.idMunicipio = 15";
+			$execute=mysqli_query($conexion, $query) or die(mysqli_error($conexion));
+
+			while($fila=mysqli_fetch_array($execute)){
+        ?>
+		<title><?php echo $fila['nombreMunicipio']?></title>
 		<desc>
-			<image xlink:href="welcome-profile.jpg" alt=""></image>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus maximus felis vulputate turpis varius condimentum. Aenean eleifend est non libero cursus, id bibendum ex pretium. Pellentesque at nibh neque. Vivamus tempus in quam sit amet tristique. Morbi semper lacinia sapien quis pellentesque. Nunc pharetra dolor vitae felis congue, eu faucibus odio ornare. Morbi venenatis urna lacus, id interdum ex vulputate non. Integer in tortor aliquam, tincidunt metus vel, sollicitudin lorem. Suspendisse potenti. Sed iaculis tincidunt sem at hendrerit.</p>
+			<image xlink:href="<?php echo substr($fila['imgMunicipio'],3)?>" alt=""></image>
+			<p><?php echo $fila['descripMunicipio']?></p>
 		</desc>
+		<?php
+            }
+        ?>
 	<path id="path2194" class="st1" d="M549.1,420.3c-2.7,2.5-6.6,4.8-6.8,7.9c-0.2,3.7,5.2,11,6.8,14.3c5,10.5,2.1,11.7-3.7,22.1
 		c3.7,0,8.2,0.7,11.5,0.6c1.3,0,2.2,1.6,3.8,1.3c1.5-0.2,1-2.5,1.9-2.7c2.4-0.4,13.4-0.2,16.8,1.9c5,3.1,0-0.8,1.6,6.2
 		c0.9,4.1,1,6.6,5,8.8c-0.5-0.3,7.2,0.8,7,0.9c4.5-0.8,6-3.4,9-7c3.1-3.8,1.1-2.7,5.1-5c5.5-3.1,5.6,2.3,7.3-6
@@ -417,11 +483,22 @@
 </g>
 
 <g id="Landa">
-	<title>Landa de matamoros</title>	
+		<?php
+			require_once('php/conexion.php');
+			$query="SELECT descripcion.descripMunicipio, descripcion.imgMunicipio, municipios.nombreMunicipio 
+			FROM municipios INNER JOIN descripcion ON municipios.idMunicipio = descripcion.idMunicipio WHERE descripcion.idMunicipio = 10";
+			$execute=mysqli_query($conexion, $query) or die(mysqli_error($conexion));
+
+			while($fila=mysqli_fetch_array($execute)){
+        ?>
+		<title><?php echo $fila['nombreMunicipio']?></title>
 		<desc>
-			<image xlink:href="welcome-profile.jpg" alt=""></image>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus maximus felis vulputate turpis varius condimentum. Aenean eleifend est non libero cursus, id bibendum ex pretium. Pellentesque at nibh neque. Vivamus tempus in quam sit amet tristique. Morbi semper lacinia sapien quis pellentesque. Nunc pharetra dolor vitae felis congue, eu faucibus odio ornare. Morbi venenatis urna lacus, id interdum ex vulputate non. Integer in tortor aliquam, tincidunt metus vel, sollicitudin lorem. Suspendisse potenti. Sed iaculis tincidunt sem at hendrerit.</p>
+			<image xlink:href="<?php echo substr($fila['imgMunicipio'],3)?>" alt=""></image>
+			<p><?php echo $fila['descripMunicipio']?></p>
 		</desc>
+		<?php
+            }
+        ?>
 	<path id="path2172" class="st0" d="M835.6,181.3
 		c-4.1-4.1-5.7-5.5-10.8-5.8c-5.3-0.3-8.2,1.4-13.5-1c-7.6-3.4-13.6-12.7-20.9-15.5c-8.5-3.2-12.4,0.2-14.1,6.9
 		c-2.1,8.3,3.7,7.9,4.4,15.3c0.9,9.5-8.1,8.5-10.5,13.7c-0.8,1.7,0.6,6.1-0.1,7.8c-0.9,2.7-5.4,5-5.8,6.7c-1.7,7.3,9.9,13,8.5,18.5
